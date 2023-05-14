@@ -3,6 +3,9 @@
   --primary-white:#fff;
   --primary-orange:#f9ab00;
   --primary-dark: rgba(255,255,255,255,0);
+  --primay-red:#ef4035;
+  --primary-hover-red:#f33501;
+
 
 }
 
@@ -40,4 +43,66 @@ nav ul li{
 }
 .navbar-nav>li>a:hover{
   border-top: 3px solid var(--primary-orange) ;
+}
+/*******************Header****************/
+.header-wraper{
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+@media(max-width:768px) {
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+/*******************TYPED -TEXT****************/
+
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+/*******************Header Main offer Button****************/
+
+.btn-main-offer{
+  border: 2px solid var(--primay-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 12px 12px 12px ;
+  color: var(--primary-white);
+  margin: 20px;
+  text-decoration: none;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out;
+}
+
+@media(max-width:768px){
+
 }
