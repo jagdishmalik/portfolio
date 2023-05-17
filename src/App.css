@@ -1,35 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 :root{
   --primary-white:#fff;
   --primary-orange:#f9ab00;
-  --primary-dark: rgba(255,255,255,255,0);
+  --primary-dark: rgba(255,255,255,0);
   --primay-red:#ef4035;
   --primary-hover-red:#f33501;
 
-
 }
-
-
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+h1,h4,h2,p,a{
+  text-decoration: none;
+}
 body{
   font-family: "Roboto Condensed" sans-serif;
 }
 /* Navigation bar */
 .navbar-brand{
+  text-decoration: none !important;
   color: white !important;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px !important;
 }
-nav a.nav-link{
+.nickname{
+  text-decoration: none;
+}
+nav Link a.nav-link{
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 nav ul li{
+  
   text-transform: uppercase;
 }
-.navbar-nav>li>a{
+.navbar-nav>li>.route>a{
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white);
@@ -37,17 +47,20 @@ nav ul li{
 }
 
 
-.navbar-nav>li>a.active ,.navbar-nav>li>a.active:focus{
+.navbar-nav>li>.route>a.active ,.navbar-nav>li>.route>a.active:focus{
   border-top: 3px solid var(--primary-orange) ;
 
 }
-.navbar-nav>li>a:hover{
+.navbar-nav>li>.route>a:hover{
   border-top: 3px solid var(--primary-orange) ;
+}
+.route{
+  text-decoration: none;
 }
 /*******************Header****************/
 .header-wraper{
   position: relative;
-  background: url(background.jpg) no-repeat;
+  background: url(./Assets/Mainpage.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -67,9 +80,15 @@ nav ul li{
   font-family: "Roboto Condensed" sans-serif;
   z-index: 1;
 }
+
+
 .main-info h1{
-  color: var(--primary-orange);
-  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color:rgb(116, 12, 12);
+}
+.main-info h1 >.jagdish{
+ color: rgb(201, 11, 100)  ; 
 }
 @media(max-width:768px) {
   .main-info h1{
@@ -83,26 +102,60 @@ nav ul li{
 /*******************TYPED -TEXT****************/
 
 .typed-text{
-  font-size: 2rem;
-  color: var(--primary-white);
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgb(255, 56, 56);
 }
 /*******************Header Main offer Button****************/
 
 .btn-main-offer{
-  border: 2px solid var(--primay-red);
+  border: 2px solid blue;
   text-transform: uppercase;
   border-radius: 0;
   padding: 10px 12px 12px 12px ;
-  color: var(--primary-white);
-  margin: 20px;
+  color:rgb(255, 0, 13);
+  margin: 30px;
   text-decoration: none;
+  font-weight: 500;
+ 
 }
 .btn-main-offer:hover{
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color:rgb(115, 255, 0);
   transition: .2s ease-in-out;
+}
+.btn-main{
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 @media(max-width:768px){
 
 }
+ul{
+  list-style-type: none;
+}
+.btn{
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgba(248,217,15);
+  color: #222;
+  border: 1px solid#fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-light{
+  background: transparent;
+  color: #fff;
+}
+.btn:hover{
+background:rgba(255,255,255,0.2);
+color: #fff;
+transition: 0.3s;
+}
+
+
+
+
+
