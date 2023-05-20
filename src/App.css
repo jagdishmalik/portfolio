@@ -63,7 +63,7 @@ nav ul li{
   background: url(./Assets/Mainpage.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 
 }
 .main-info{
@@ -153,6 +153,36 @@ ul{
 background:rgba(255,255,255,0.2);
 color: #fff;
 transition: 0.3s;
+}
+
+/* bottom footer */
+.footer-bottom {
+  position: relative;
+  text-align: center;
+  background-color: rgba(19,19,19,0.8);
+  height: 8vh;
+}
+
+
+.footer-bottom .copyright {
+  font-size: 16px;
+  color: #fff;
+}
+.footer-bottom a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.footer-bottom .copyright {
+  font-size: 16px;
+}
+.footer-bottom .inner {
+  position: relative;
+  display: block;
+  padding: 24px 0;
+  line-height: 0.5px;
+  color: #999b9f;
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 
 

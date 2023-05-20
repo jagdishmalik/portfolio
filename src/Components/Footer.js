@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="right"></div>
         <h4 className="footer-heading">About Me</h4>
           <p className="footer-about">
-          This is Jagdish.I enjoy discussing new projects and design Challenges
+          This is Jagdish.I enjoy discussing new projects and design Challenges & deliver on time as per clint requirement
           </p>
         <div className="social">
           <FaFacebook

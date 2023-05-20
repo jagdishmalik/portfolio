@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Project from './Components/Project';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import FooterBottom from './Components/FooterBottom'
 import {Route,Routes} from "react-router-dom";
 import Footer from './Components/Footer';
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
+      <FooterBottom/>
    </>
   );
 }
