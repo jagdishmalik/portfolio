@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import React from "react";
 import { Link } from "react-router-dom";
 import Typed from "react-typed"
@@ -15,10 +16,18 @@ const Header = () => {
      backSpeed={60}
      loop
      />
+     <div>
+
+      <a href="" >
+        <button className="btn-main-offer">Download Cv</button>
+      </a>
+
+
      <Link className="btn-main" to="/contact">
-     <a  href="#" className="btn-main-offer">Contact Me</a>
+     <button href="#" className="btn-main-offer">Contact Me</button>
      </Link>
         </div>
+     </div>
     </div>
   )
 }

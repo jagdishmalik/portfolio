@@ -1,7 +1,7 @@
 import "./FooterStyle.css"
 
 import React from 'react'
-import {FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa" 
+import {FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter,FaInstagram,FaGithub} from "react-icons/fa" 
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#fff", marginRight: "2rem" }}
               />
-              jagdishmalik32@gamil.com
+              jagdishmdev@gmail.com
             </h4>
           </div>
         </div>
@@ -40,15 +40,34 @@ const Footer = () => {
           This is Jagdish.I enjoy discussing new projects and design Challenges & deliver on time as per clint requirement
           </p>
         <div className="social">
-          <FaFacebook
+          <a  href="https://www.facebook.com/jagdishmalik31" target="__blank">
+          <FaFacebook className="facebook"
             size={30}
             style={{ color: "#fff", marginRight: "1rem" }}
-          />
-          <FaTwitter size={30} style={{ color: "#fff", marginRight: "1rem" }} />
+            />
+            </a>
+            <a href="https://twitter.com/home" target="__blank">
+
+          <FaTwitter className="twitter" size={30} style={{ color: "#fff", marginRight: "1rem" }} />
+            </a>
+          <a href="https://www.linkedin.com/feed/" target="__blank">
+
           <FaLinkedin
-            size={30}
+            className="linkedin" size={30}
             style={{ color: "#fff", marginRight: "1rem" }}
-          />
+            />
+            </a>
+          <a href="https://www.instagram.com/" target="__blank">
+
+          <FaInstagram size={30}
+           className="instagram"
+            style={{ color: "#fff", marginRight: "1rem" }}/>
+            </a>
+          <a href="https://github.com/jagdishmalik" target="__blank">
+
+          <FaGithub className="github" size={30}
+            style={{ color: "#fff", marginRight: "1rem" }}/>
+            </a>
         </div>
       </div>
     </div>
