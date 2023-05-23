@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
       
       <Heroimg2 heading="CONTACT." text="Lets Have a Chat"/>
-      </div>
+      </div>  
   )
 }
 export default Contact;
